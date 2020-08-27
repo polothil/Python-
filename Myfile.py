@@ -54,7 +54,7 @@ def plot_start():
 def plot_stop():
     global condition
     condition = False
-    data.clear
+    s.reset_input_buffer()
 
 
 def save_fn1():
@@ -62,6 +62,7 @@ def save_fn1():
     data_1 = save_data
     # print(save_data)
     np.savetxt('Data_1.txt', data_1, fmt='%d', delimiter=',')
+    s.reset_input_buffer()
 
 
 def save_fn2():
@@ -69,6 +70,7 @@ def save_fn2():
     data_2 = save_data
     # print(save_data)
     np.savetxt('Data_2.txt', data_2, fmt='%d', delimiter=',')
+    s.reset_input_buffer()
 
 
 def save_fn3():
@@ -76,6 +78,7 @@ def save_fn3():
     data_3 = save_data
     # print(save_data)
     np.savetxt('Data_3.txt', data_3, fmt='%d', delimiter=',')
+    s.reset_input_buffer()
 
 
 def save_fn4():
@@ -83,6 +86,7 @@ def save_fn4():
     data_4 = save_data
     # print(save_data)
     np.savetxt('Data_4.txt', data_4, fmt='%d', delimiter=',')
+    s.reset_input_buffer()
 
 
 def save_fn5():
@@ -90,6 +94,7 @@ def save_fn5():
     data_5 = save_data
     # print(save_data)
     np.savetxt('Data_5.txt', data_5, fmt='%d', delimiter=',')
+    s.reset_input_buffer()
 
 
 # -----Main GUI code-----

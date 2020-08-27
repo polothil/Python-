@@ -49,6 +49,8 @@ def plot_start():
 def plot_stop():
     global cond
     cond = False
+    s.reset_input_buffer()
+    # fig.clear(True)
 
 
 # -----Main GUI code-----
